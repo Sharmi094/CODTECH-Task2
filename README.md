@@ -31,4 +31,4 @@ Execution of test scripts and reporting of test results.
 
 IDE: Eclipse
 
-Version Control System: Git
+
