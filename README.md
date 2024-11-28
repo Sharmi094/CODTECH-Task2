@@ -23,7 +23,7 @@ Development of test scripts for automating the functional testing of the Ebay we
 Execution of test scripts and reporting of test results.
 
 ### Technologies Used:
-Programming Language: Java
+**Programming Language**: Java
 Test Automation Framework: TestNG
 Browser Driver: ChromeDriver
 IDE: Eclipse
