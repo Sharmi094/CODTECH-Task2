@@ -24,7 +24,11 @@ Execution of test scripts and reporting of test results.
 
 ### Technologies Used:
 **Programming Language**: Java
-Test Automation Framework: TestNG
-Browser Driver: ChromeDriver
+
+**Test Automation Framework**: TestNG
+
+**Browser Driver**: ChromeDriver
+
 IDE: Eclipse
+
 Version Control System: Git
