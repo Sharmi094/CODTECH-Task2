@@ -1,0 +1,37 @@
+package Testng;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.Test;
+
+public class EbayTest {
+  WebDriver driver;
+  
+
+  @Test
+  public void testEbaySearch() {
+
+  
+    WebDriver driver = new ChromeDriver();
+    driver.manage().window().maximize();
+   
+    // Navigate to Ebay
+    driver.get("https://www.ebay.com/");
+
+    //search 
+    driver.findElement(By.id("gh-ac")).sendKeys("iPhone");
+
+    
+    // Click search button
+    driver.findElement(By.id("gh-btn")).click();
+
+    // Verify search result
+    String searchResultText = driver.findElement(By.xpath("//h1[@class='srp-controls__count-heading']")).getText();
+    
+    System.out.println("Search Result Text: " + searchResultText);
+
+    // Close the browser
+    driver.quit();
+  }
+}
